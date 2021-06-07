@@ -59,9 +59,12 @@ class BeerController extends FOSRestBundle
                         $status = Response::HTTP_OK;
                     }
                 }
-            } catch (ClientException $exception) {
+            }
+            // @codeCoverageIgnoreStart
+            catch (ClientException $exception) {
                 $status = Response::HTTP_NOT_FOUND;
             }
+            // @codeCoverageIgnoreEnd
         } elseif (null === $request->get('food')) {
             $status = Response::HTTP_BAD_REQUEST;
         }
@@ -105,9 +108,12 @@ class BeerController extends FOSRestBundle
                         $status = Response::HTTP_OK;
                     }
                 }
-            } catch (ClientException $exception) {
+            }
+            // @codeCoverageIgnoreStart
+            catch (ClientException $exception) {
                 $status = Response::HTTP_NOT_FOUND;
             }
+            // @codeCoverageIgnoreEnd
         } elseif (null === $request->get('id')) {
             $status = Response::HTTP_BAD_REQUEST;
         }
