@@ -1,0 +1,11 @@
+get_beer_by_food:
+  methods:
+    - GET
+  path: /api/v1/beer
+  controller: App\Core\Infraestructure\Action\V1\Beer\GetBeersByFoodAction
+
+get_beer_detail_by_id:
+  methods:
+    - GET
+  path: /api/v1/beer/detail
+  controller: App\Core\Infraestructure\Action\V1\Beer\GetBeersDetailByIdAction
