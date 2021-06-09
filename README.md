@@ -7,7 +7,7 @@ Creación de 2 servicios utilizando **Symfony 4**:
         * id.
         * nombre.
         * descripción.
-    * **Versión Controller**
+    * **Versión Basica**
         * Route: /api/beer?food={string}
         * Method: GET
     * **Versión DDD**
@@ -18,7 +18,7 @@ Creación de 2 servicios utilizando **Symfony 4**:
         * imagen.
         * slogan (tagline).
         * fecha de fabricación (first_brewed).
-    * **Versión Controller**
+    * **Versión Básica**
         * Route: /api/beer/detail?id={id}
         * Method: GET
     * **Versión DDD**
